@@ -8,6 +8,6 @@ RUN apt-get update && \
     apt-get clean
     
 USER jovyan
-RUN pip install octave_kernel && \
+RUN pip install octave_kernel import-ipynb && \
     export OCTAVE_EXECUTABLE=$(which octave)
 
